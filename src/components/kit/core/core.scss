@@ -21,9 +21,9 @@ dd {
   margin: 0;
 }
 
-/* Remove list styles on ul, ol elements with a list role */
-ul[role='list'],
-ol[role='list'] {
+/* Remove list styles on ul, ol elements */
+ul,
+ol {
   list-style: none;
 }
 
@@ -65,4 +65,9 @@ body {
   font-family: $montserrat-font-weight-400;
   font-size: $font-size-base;
   background-color: #F2F2F2;
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
 }
