@@ -1,0 +1,27 @@
+.hero-section {
+  background-color: #0D0D0D;
+  color: #ffffff;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .text {
+      flex: 1;
+
+      .subtitle {
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+      }
+
+      .title {
+        font-size: $font-size-xxl;
+      }
+    }
+
+    .illustration {
+      flex: 1;
+    }
+  }
+}
