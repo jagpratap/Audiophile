@@ -1,12 +1,13 @@
 .header {
   background-color: #0D0D0D;
   color: #ffffff;
-  padding: 2rem 0;
 
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 2rem 0;
+    border-bottom: 0.1rem solid grey;
 
     .navbar_nav {
       display: flex;
@@ -20,7 +21,7 @@
       }
     }
 
-    .navbar-cart {
+    .navbar_cart {
       width: 2rem;
       cursor: pointer;
     }
