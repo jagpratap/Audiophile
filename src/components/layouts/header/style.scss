@@ -2,33 +2,27 @@
   background-color: #0D0D0D;
   color: #ffffff;
   padding: 2rem 0;
-  border-bottom: 0.1rem solid #F2F2F2;
-}
 
-.header-navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  h1 {
-    font-family: $montserrat-font-weight-600;
-  }
-
-  .nav-links {
+  .navbar {
     display: flex;
-    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
 
-    a {
-      text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: 0.1rem;
-      color: #ffffff;
-      font-family: $montserrat-font-weight-500;
+    .navbar_nav {
+      display: flex;
+      gap: 2rem;
+
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        color: #ffffff;
+      }
     }
-  }
 
-  img {
-    width: 2rem;
-    cursor: pointer;
+    .navbar-cart {
+      width: 2rem;
+      cursor: pointer;
+    }
   }
 }
