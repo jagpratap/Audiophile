@@ -1,19 +1,14 @@
 const Home = () => (
-  <section className="hero-section">
+  <section className="hero_section">
     <div className="container">
-      <div className="content">
-        <div className="text">
-          <p className="subtitle">Product name</p>
-          <h1 className="title">XX99 Mark II Headphones</h1>
-          <p className="desc">
-            Experience natural, lifelike audio and exceptional build quality
-            made for the passionate music enthusiast.
-          </p>
-          <button type="button">See Product</button>
-        </div>
-        <div className="illustration">
-          <img src="./assets/images/jpg/hero-image.jpg" alt="hero-illustration" />
-        </div>
+      <div className="section_content">
+        <p className="content_subheading">New Product</p>
+        <h1 className="content_heading">XX99 Mark II Headphones</h1>
+        <p className="content_desc">
+          Experience natural, lifelike audio and exceptional build quality
+          made for the passionate music enthusiast.
+        </p>
+        <button className="content_action" type="button">See Product</button>
       </div>
     </div>
   </section>
