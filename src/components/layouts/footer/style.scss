@@ -1,12 +1,13 @@
 .footer {
   background-color: #0D0D0D;
   color: #ffffff;
+  padding: 5rem 0;
 
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
+    padding-bottom: 2rem;
 
     .navbar_nav {
       display: flex;
@@ -17,6 +18,29 @@
         text-transform: uppercase;
         letter-spacing: 0.1rem;
         color: #ffffff;
+      }
+    }
+  }
+
+  .footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .content_left {
+      width: 40%;
+
+      .content_desc {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .content_right {
+      display: flex;
+      gap: 2rem;
+
+      img {
+        width: 1.5rem;
       }
     }
   }
