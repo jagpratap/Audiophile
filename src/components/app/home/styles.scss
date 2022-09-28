@@ -3,30 +3,24 @@
   color: $primary_text_white;
   background-image: url("../../../../public/assets/images/products/hero-image.jpg");
   background-repeat: no-repeat;
-  background-position: 80% 50%;
+  background-position: 90% 50%;
   background-size: contain;
 
   .section_content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.5rem;
-    width: 30%;
+    width: 35%;
     padding: 15rem 0;
 
     .content_subheading {
       text-transform: uppercase;
-      letter-spacing: 0.5rem;
+      letter-spacing: 0.8rem;
     }
 
     .content_heading {
-      font-size: 4.5rem;
-      line-height: 1;
+      text-transform: uppercase;
     }
 
     .content_desc {
       width: 80%;
-      font-size: 1.1rem;
       color: $primary_text_grey;
     }
 
@@ -63,11 +57,9 @@
 
       p {
         text-transform: uppercase;
-        margin-bottom: 1rem;
       }
 
       a {
-        text-decoration: none;
         text-transform: uppercase;
         display: flex;
         align-items: center;
@@ -109,14 +101,7 @@
         margin-right: auto;
 
         .desc_title {
-          font-size: 4rem;
-          line-height: 1;
           text-transform: uppercase;
-          margin-bottom: 1rem;
-        }
-
-        .desc_tagline {
-          margin-bottom: 1rem;
         }
 
         .desc_action {
@@ -135,10 +120,7 @@
         margin-left: auto;
 
         .desc_title {
-          font-size: 2rem;
-          line-height: 1;
           text-transform: uppercase;
-          margin-bottom: 1rem;
         }
 
         .desc_action {
@@ -174,16 +156,12 @@
         height: inherit;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
-        gap: 1rem;
         background-color: $secondary_bg_white;
         border-radius: 0.5rem;
 
         .desc_title {
-          font-size: 2rem;
-          line-height: 1;
-          margin-left: 15rem;
           text-transform: uppercase;
         }
 
@@ -191,7 +169,6 @@
           background-color: transparent;
           color: $primary_bg_black;
           border: 0.1rem solid $primary_bg_black;
-          margin-left: 15rem;
         }
       }
     }
@@ -208,10 +185,7 @@
       width: 35%;
 
       .article_heading {
-        font-size: 3rem;
-        line-height: 1;
         text-transform: uppercase;
-        margin-bottom: 1.5rem;
 
         span {
           color: $primary_orange;

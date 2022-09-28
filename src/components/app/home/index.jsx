@@ -22,7 +22,7 @@ const Home = () => (
       <div className="container">
         <div className="section_content">
           <p className="content_subheading">New Product</p>
-          <h1 className="content_heading">XX99 Mark II Headphones</h1>
+          <h3 className="content_heading">XX99 Mark II Headphones</h3>
           <p className="content_desc">
             Experience natural, lifelike audio and exceptional build quality
             made for the passionate music enthusiast.
@@ -49,7 +49,7 @@ const Home = () => (
           <div className="product product1">
             <img src="./assets/images/products/speakers/speakerZX9.png" alt="SpeakerZX9" />
             <div className="product1_desc">
-              <h1 className="desc_title">ZX9 Speaker</h1>
+              <h3 className="desc_title">ZX9 Speaker</h3>
               <p className="desc_tagline">
                 Upgrade to premium speakers that are phenomenally built to deliver
                 truly remarkable sound.
@@ -59,7 +59,7 @@ const Home = () => (
           </div>
           <div className=" product product2">
             <div className="product2_desc">
-              <h1 className="desc_title">ZX7 Speaker</h1>
+              <h4 className="desc_title">ZX7 Speaker</h4>
               <button className="desc_action" type="button">See Product</button>
             </div>
             <img src="./assets/images/products/speakers/speakerZX7.png" alt="SpeakerZX7" />
@@ -69,20 +69,20 @@ const Home = () => (
               <img src="./assets/images/products/earphones/earphoneYX1.jpg" alt="EarphoneYX1" />
             </div>
             <div className="product3_desc">
-              <h1 className="desc_title">YX1 Earphone</h1>
+              <h4 className="desc_title">YX1 Earphone</h4>
               <button className="desc_action" type="button">See Product</button>
             </div>
           </div>
         </div>
         <div className="section_article">
           <div className="article_content">
-            <h1 className="article_heading">
+            <h4 className="article_heading">
               Bringing you the
               {" "}
               <span>best</span>
               {" "}
               audio gear
-            </h1>
+            </h4>
             <p className="article_desc">
               Located at the heart of New York City, Audiophile is the premier
               store for high end headphones,earphones, speakers, and audio accessories.

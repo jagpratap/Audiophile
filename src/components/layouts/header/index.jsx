@@ -2,7 +2,7 @@ const Header = () => (
   <header className="header">
     <div className="container">
       <nav className="navbar">
-        <h1 className="navbar_brand" href="/">audiophile</h1>
+        <h5 className="navbar_brand" href="/">audiophile</h5>
         <ul className="navbar_nav">
           <li><a href="/home">Home</a></li>
           <li><a href="/headphones">Headphones</a></li>

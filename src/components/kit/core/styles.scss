@@ -13,6 +13,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p,
 figure,
 blockquote,
@@ -46,6 +47,9 @@ a:not([class]) {
 
 /* Make images easier to work with */
 img,
+picture,
+video,
+canvas,
 svg {
   max-width: 100%;
   display: block;
@@ -59,7 +63,49 @@ select {
   font: inherit;
 }
 
-/*************************************************/
+/**********************************************/
+
+/************* Type Scale (Ratio=1.618) *************/
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 1.25rem 0;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 11.089rem;
+}
+
+h2 {
+  font-size: 6.854rem;
+}
+
+h3 {
+  font-size: 4.236rem;
+}
+
+h4 {
+  font-size: 2.618rem;
+}
+
+h5 {
+  font-size: 1.618rem;
+}
+
+small,
+.text_small {
+  font-size: 0.618rem;
+}
+
+/***************************************/
 
 body {
   font-family: $montserrat-font-weight-400 , sans-serif;
