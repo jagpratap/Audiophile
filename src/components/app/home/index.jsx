@@ -46,7 +46,7 @@ const Home = () => (
           ))}
         </div>
         <div className="feature_products">
-          <div className="product1">
+          <div className="product product1">
             <img src="./assets/images/products/speakers/speakerZX9.png" alt="SpeakerZX9" />
             <div className="product1_desc">
               <h1 className="desc_title">ZX9 Speaker</h1>
@@ -57,14 +57,14 @@ const Home = () => (
               <button className="desc_action" type="button">See Product</button>
             </div>
           </div>
-          <div className="product2">
+          <div className=" product product2">
             <div className="product2_desc">
               <h1 className="desc_title">ZX7 Speaker</h1>
               <button className="desc_action" type="button">See Product</button>
             </div>
             <img src="./assets/images/products/speakers/speakerZX7.png" alt="SpeakerZX7" />
           </div>
-          <div className="product3">
+          <div className="product product3">
             <div className="product3_image">
               <img src="./assets/images/products/earphones/earphoneYX1.jpg" alt="EarphoneYX1" />
             </div>

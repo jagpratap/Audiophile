@@ -62,9 +62,9 @@ select {
 /*************************************************/
 
 body {
-  font-family: $montserrat-font-weight-400;
+  font-family: $montserrat-font-weight-400 , sans-serif;
   font-size: $font-size-base;
-  background-color: #F2F2F2;
+  background-color: $primary_bg_white;
 }
 
 .container {

@@ -1,6 +1,6 @@
 .hero_section {
-  background-color: #0D0D0D;
-  color: #ffffff;
+  background-color: $primary_bg_black;
+  color: $primary_text_white;
   background-image: url("../../../../public/assets/images/products/hero-image.jpg");
   background-repeat: no-repeat;
   background-position: 80% 50%;
@@ -11,11 +11,10 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
-    width: 30vw;
+    width: 30%;
     padding: 15rem 0;
 
     .content_subheading {
-      font-size: 1.2rem;
       text-transform: uppercase;
       letter-spacing: 0.5rem;
     }
@@ -28,11 +27,12 @@
     .content_desc {
       width: 80%;
       font-size: 1.1rem;
+      color: $primary_text_grey;
     }
 
     .content_action {
-      background-color: #BF471B;
-      color: #FFFFFF;
+      background-color: $primary_orange;
+      color: $primary_text_white;
     }
   }
 }
@@ -45,14 +45,14 @@
     gap: 5rem;
 
     .category {
+      flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-end;
       height: 15rem;
-      background-color: #D9D9D9;
+      background-color: $secondary_bg_white;
       border-radius: 0.5rem;
-      flex: 1;
       padding-bottom: 2rem;
 
       img {
@@ -86,14 +86,17 @@
     flex-direction: column;
     gap: 5rem;
 
-    .product1 {
+    .product {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #BF471B;
       border-radius: 0.5rem;
-      height: 45rem;
       overflow: hidden;
+    }
+
+    .product1 {
+      background-color: $primary_orange;
+      height: 45rem;
 
       img {
         width: 60%;
@@ -104,51 +107,44 @@
       .product1_desc {
         width: 20%;
         margin-right: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 2rem;
 
         .desc_title {
           font-size: 4rem;
           line-height: 1;
           text-transform: uppercase;
+          margin-bottom: 1rem;
+        }
+
+        .desc_tagline {
+          margin-bottom: 1rem;
         }
 
         .desc_action {
-          background-color: #0D0D0D;
-          color: #FFFFFF;
+          background-color: $primary_bg_black;
+          color: $primary_text_white;
         }
       }
     }
 
     .product2 {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #D9D9D9;
-      border-radius: 0.5rem;
+      background-color: $primary_orange;
       height: 25rem;
-      overflow: hidden;
 
       .product2_desc {
         width: 40%;
         margin-left: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 2rem;
 
         .desc_title {
           font-size: 2rem;
           line-height: 1;
           text-transform: uppercase;
+          margin-bottom: 1rem;
         }
 
         .desc_action {
           background-color: transparent;
-          color: #0D0D0D;
-          border: 0.1rem solid #0D0D0D;
+          color: $primary_bg_black;
+          border: 0.1rem solid $primary_bg_black;
         }
       }
 
@@ -158,12 +154,8 @@
     }
 
     .product3 {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       gap: 5rem;
       height: 20rem;
-      overflow: hidden;
 
       .product3_image {
         flex: 1;
@@ -184,8 +176,8 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        gap: 2rem;
-        background-color: #D9D9D9;
+        gap: 1rem;
+        background-color: $secondary_bg_white;
         border-radius: 0.5rem;
 
         .desc_title {
@@ -197,8 +189,8 @@
 
         .desc_action {
           background-color: transparent;
-          color: #0D0D0D;
-          border: 0.1rem solid #0D0D0D;
+          color: $primary_bg_black;
+          border: 0.1rem solid $primary_bg_black;
           margin-left: 15rem;
         }
       }
@@ -214,19 +206,15 @@
 
     .article_content {
       width: 35%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 2rem;
-      color: #0D0D0D;
 
       .article_heading {
         font-size: 3rem;
         line-height: 1;
         text-transform: uppercase;
+        margin-bottom: 1.5rem;
 
         span {
-          color: #BF471B;
+          color: $primary_orange;
         }
       }
     }
