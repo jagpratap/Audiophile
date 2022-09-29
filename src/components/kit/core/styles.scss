@@ -7,19 +7,10 @@
   box-sizing: border-box;
 }
 
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-figure,
-blockquote,
-dl,
-dd {
+/* Remove default margin/padding */
+* {
   margin: 0;
+  padding: 0;
 }
 
 /* Remove list styles on ul, ol elements */
@@ -114,7 +105,7 @@ body {
 }
 
 .container {
-  width: 80vw;
+  width: 90vw;
   margin: 0 auto;
 }
 

@@ -1,27 +1,113 @@
 .header {
   background-color: $primary_bg_black;
   color: $primary_text_white;
+  border-bottom: 0.1rem solid $primary_text_grey;
 
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 0;
-    border-bottom: 0.1rem solid $primary_text_grey;
+  .navbar_mobile {
 
-    .navbar_nav {
+    .navbar_features {
       display: flex;
-      gap: 2rem;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 0;
 
-      a {
-        text-transform: uppercase;
-        letter-spacing: 0.1rem;
+      .toggle_button {
+        width: 57px;
+        height: 2px;
+        background-color: transparent;
+
+        .hamburger,
+        .hamburger::before,
+        .hamburger:after {
+          display: block;
+          background-color: $primary_text_white;
+          position: absolute;
+          height: 2px;
+          width: 25px;
+          transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .hamburger::before {
+          content: '';
+          margin-top: -8px;
+        }
+
+        .hamburger::after {
+          content: '';
+          margin-top: 8px;
+        }
+      }
+
+      .navbar_brand {
+        margin: 0;
+
+        @include tablet {
+          margin-right: auto;
+          margin-left: 1.5rem;
+        }
+      }
+
+      .navbar_cart {
+        width: 2rem;
+        cursor: pointer;
       }
     }
 
-    .navbar_cart {
-      width: 2rem;
-      cursor: pointer;
+    .navbar_nav--show {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      position: relative;
+    }
+
+    .navbar_nav--hide {
+      display: none;
     }
   }
+
+  .navbar_laptop {
+    display: none;
+  }
+
+  @include laptop {
+
+    .navbar_mobile {
+      display: none;
+    }
+
+    .navbar_laptop {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 0;
+      border-bottom: 0.1rem solid $primary_text_grey;
+
+      .navbar_brand {
+        margin: 0;
+      }
+
+      .navbar_nav {
+        display: flex;
+        gap: 1.5rem;
+
+        @include desktop {
+          gap: 2rem;
+        }
+
+        a {
+          text-transform: uppercase;
+          letter-spacing: 0.1rem;
+        }
+      }
+
+      .navbar_cart {
+        width: 2rem;
+        cursor: pointer;
+      }
+    }
+  }
+
 }
