@@ -1,7 +1,7 @@
 .header {
   background-color: $primary_bg_black;
   color: $primary_text_white;
-  border-bottom: 0.1rem solid $primary_text_grey;
+  border-bottom: 0.1rem solid $border_grey;
 
   .navbar_mobile {
 
@@ -73,6 +73,8 @@
 
   @include laptop {
 
+    border-bottom: none;
+
     .navbar_mobile {
       display: none;
     }
@@ -82,7 +84,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 2rem 0;
-      border-bottom: 0.1rem solid $primary_text_grey;
+      border-bottom: 0.1rem solid $border_grey;
 
       .navbar_brand {
         margin: 0;
