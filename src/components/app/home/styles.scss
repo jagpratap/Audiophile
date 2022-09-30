@@ -5,14 +5,23 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  @include tablet {
+    background-size: cover;
+    padding: 5vw 0;
+  }
+
   @include laptop {
+    min-height: 90vh;
     background-position: right;
+    background-size: contain;
+    padding: 5rem 0;
   }
 
   .section_content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
     gap: 1rem;
     padding: 8rem 0;
@@ -20,16 +29,38 @@
     @include laptop {
       align-items: flex-start;
       text-align: start;
+      gap: 1.5rem;
+      width: 25rem;
+    }
+
+    @include laptop {
+      align-items: flex-start;
+      text-align: start;
+      gap: 2rem;
       width: 25rem;
     }
 
     .content_subheading {
       text-transform: uppercase;
       letter-spacing: 0.5rem;
+      color: $primary_text_grey;
+
+      @include laptop {
+        letter-spacing: 0.75rem;
+        font-size: calc(1.1 * $font-size-base);
+      }
     }
 
     .content_heading {
       text-transform: uppercase;
+
+      @include laptop {
+        font-size: calc(1.25 * $font-size-2xl);
+      }
+
+      @include desktop {
+        font-size: calc(1.35 * $font-size-2xl);
+      }
     }
 
     .content_desc {
@@ -48,14 +79,15 @@
 }
 
 .main_section {
+  margin: 5rem 0;
+
   .product_categories {
     display: flex;
-    justify-content: space-between;
-    padding: 15rem 0 10rem;
+    flex-direction: column;
     gap: 5rem;
+    // padding: 5rem 0;
 
     .category {
-      flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -88,6 +120,47 @@
       }
     }
   }
+
+  // .product_categories {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   padding: 15rem 0 10rem;
+  //   gap: 5rem;
+
+  //   .category {
+  //     flex: 1;
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
+  //     justify-content: flex-end;
+  //     height: 15rem;
+  //     background-color: $secondary_bg_white;
+  //     border-radius: 0.5rem;
+  //     padding-bottom: 2rem;
+
+  //     img {
+  //       width: 15rem;
+  //       position: relative;
+  //       top: -10%;
+  //     }
+
+  //     p {
+  //       text-transform: uppercase;
+  //     }
+
+  //     a {
+  //       text-transform: uppercase;
+  //       display: flex;
+  //       align-items: center;
+  //       gap: 0.5rem;
+
+  //       img {
+  //         width: 1rem;
+  //         margin-top: 0.2rem;
+  //       }
+  //     }
+  //   }
+  // }
 
   .feature_products {
     display: flex;

@@ -108,6 +108,10 @@ body {
 .container {
   width: 90vw;
   margin: 0 auto;
+
+  @include desktop {
+    width: 80vw;
+  }
 }
 
 button {
