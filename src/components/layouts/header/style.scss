@@ -3,7 +3,15 @@
   color: $primary_text_white;
   border-bottom: 0.1rem solid $border_grey;
 
+  @include laptop {
+    border-bottom: none;
+  }
+
   .navbar_mobile {
+
+    @include laptop {
+      display: none;
+    }
 
     .navbar_features {
       display: flex;
@@ -39,7 +47,6 @@
       }
 
       .navbar_brand {
-        margin: 0;
 
         @include tablet {
           margin-right: auto;
@@ -73,22 +80,12 @@
 
   @include laptop {
 
-    border-bottom: none;
-
-    .navbar_mobile {
-      display: none;
-    }
-
     .navbar_laptop {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 2rem 0;
       border-bottom: 0.1rem solid $border_grey;
-
-      .navbar_brand {
-        margin: 0;
-      }
 
       .navbar_nav {
         display: flex;

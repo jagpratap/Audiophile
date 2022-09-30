@@ -3,16 +3,29 @@
   color: $primary_text_white;
   background-image: url("../../../../public/assets/images/products/hero-image.jpg");
   background-repeat: no-repeat;
-  background-position: 90% 50%;
-  background-size: contain;
+  background-position: center;
+
+  @include laptop {
+    background-position: right;
+  }
 
   .section_content {
-    width: 35%;
-    padding: 15rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 8rem 0;
+
+    @include laptop {
+      align-items: flex-start;
+      text-align: start;
+      width: 25rem;
+    }
 
     .content_subheading {
       text-transform: uppercase;
-      letter-spacing: 0.8rem;
+      letter-spacing: 0.5rem;
     }
 
     .content_heading {
@@ -20,8 +33,11 @@
     }
 
     .content_desc {
-      width: 80%;
       color: $primary_text_grey;
+
+      @include tablet {
+        width: 25rem;
+      }
     }
 
     .content_action {

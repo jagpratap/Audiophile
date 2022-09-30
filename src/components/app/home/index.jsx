@@ -1,20 +1,20 @@
-const categories = [
-  {
-    id: 1,
-    name: "headphones",
-    image: "./assets/images/products/category_hero/headphones_hero.png",
-  },
-  {
-    id: 2,
-    name: "Speakers",
-    image: "./assets/images/products/category_hero/speakers_hero.png",
-  },
-  {
-    id: 3,
-    name: "Earphones",
-    image: "./assets/images/products/category_hero/earphones_hero.png",
-  },
-];
+// const categories = [
+//   {
+//     id: 1,
+//     name: "headphones",
+//     image: "./assets/images/products/category_hero/headphones_hero.png",
+//   },
+//   {
+//     id: 2,
+//     name: "Speakers",
+//     image: "./assets/images/products/category_hero/speakers_hero.png",
+//   },
+//   {
+//     id: 3,
+//     name: "Earphones",
+//     image: "./assets/images/products/category_hero/earphones_hero.png",
+//   },
+// ];
 
 const Home = () => (
   <>
@@ -22,7 +22,7 @@ const Home = () => (
       <div className="container">
         <div className="section_content">
           <p className="content_subheading">New Product</p>
-          <h3 className="content_heading">XX99 Mark II Headphones</h3>
+          <h3 className="content_heading">XX99 Mark II Headphone</h3>
           <p className="content_desc">
             Experience natural, lifelike audio and exceptional build quality
             made for the passionate music enthusiast.
@@ -31,7 +31,7 @@ const Home = () => (
         </div>
       </div>
     </section>
-    <main className="main_section">
+    {/* <main className="main_section">
       <div className="container">
         <div className="product_categories">
           {categories.map(({ id, name, image }) => (
@@ -97,7 +97,7 @@ const Home = () => (
           </div>
         </div>
       </div>
-    </main>
+    </main> */}
   </>
 );
 
