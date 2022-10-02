@@ -14,7 +14,10 @@
     min-height: 90vh;
     background-position: right;
     background-size: contain;
-    padding: 5rem 0;
+  }
+
+  @include huge_screen {
+    background-position: 90%;
   }
 
   .section_content {
@@ -33,7 +36,7 @@
       width: 25rem;
     }
 
-    @include laptop {
+    @include desktop {
       align-items: flex-start;
       text-align: start;
       gap: 2rem;
@@ -79,32 +82,79 @@
 }
 
 .main_section {
-  margin: 5rem 0;
 
   .product_categories {
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    // padding: 5rem 0;
+    padding: 5rem 0;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 20vw 0 15vw;
+    }
+
+    @include laptop {
+      gap: 2rem;
+      padding: 9.5rem 0 7rem;
+    }
+
+    @include desktop {
+      padding: 12rem 0 8rem;
+    }
+
+    @include huge_screen {
+      padding: 14rem 0 10rem;
+    }
 
     .category {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-end;
-      height: 15rem;
+      height: 14rem;
       background-color: $secondary_bg_white;
       border-radius: 0.5rem;
       padding-bottom: 2rem;
 
+      @include tablet {
+        flex: 1;
+      }
+
+      @include desktop {
+        height: 15rem;
+      }
+
+      @include huge_screen {
+        height: 16rem;
+      }
+
       img {
-        width: 15rem;
+        width: 10rem;
         position: relative;
         top: -10%;
+
+        @include tablet {
+          top: -12%;
+        }
+
+        @include desktop {
+          width: 11rem;
+          top: -14%;
+        }
+
+        @include huge_screen {
+          width: 12rem;
+          top: -16%;
+        }
       }
 
       p {
         text-transform: uppercase;
+        margin-bottom: 1rem;
+        font-family: $montserrat-font-weight-600;
       }
 
       a {
@@ -113,6 +163,14 @@
         align-items: center;
         gap: 0.5rem;
 
+        @include tablet {
+          font-size: calc(0.9 * $font-size-base);
+        }
+
+        @include desktop {
+          font-size: $font-size-base;
+        }
+
         img {
           width: 1rem;
           margin-top: 0.2rem;
@@ -120,47 +178,6 @@
       }
     }
   }
-
-  // .product_categories {
-  //   display: flex;
-  //   justify-content: space-between;
-  //   padding: 15rem 0 10rem;
-  //   gap: 5rem;
-
-  //   .category {
-  //     flex: 1;
-  //     display: flex;
-  //     flex-direction: column;
-  //     align-items: center;
-  //     justify-content: flex-end;
-  //     height: 15rem;
-  //     background-color: $secondary_bg_white;
-  //     border-radius: 0.5rem;
-  //     padding-bottom: 2rem;
-
-  //     img {
-  //       width: 15rem;
-  //       position: relative;
-  //       top: -10%;
-  //     }
-
-  //     p {
-  //       text-transform: uppercase;
-  //     }
-
-  //     a {
-  //       text-transform: uppercase;
-  //       display: flex;
-  //       align-items: center;
-  //       gap: 0.5rem;
-
-  //       img {
-  //         width: 1rem;
-  //         margin-top: 0.2rem;
-  //       }
-  //     }
-  //   }
-  // }
 
   .feature_products {
     display: flex;

@@ -109,6 +109,10 @@ body {
   width: 90vw;
   margin: 0 auto;
 
+  @include laptop {
+    width: 85vw;
+  }
+
   @include desktop {
     width: 80vw;
   }
