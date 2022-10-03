@@ -87,26 +87,25 @@
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    padding: 5rem 0;
+    margin: 7rem 0 5rem;
 
     @include tablet {
       flex-direction: row;
       justify-content: space-between;
       gap: 1rem;
-      padding: 20vw 0 15vw;
     }
 
     @include laptop {
       gap: 2rem;
-      padding: 9.5rem 0 7rem;
+      margin: 9.5rem 0 7rem;
     }
 
     @include desktop {
-      padding: 12rem 0 8rem;
+      margin: 12rem 0 8rem;
     }
 
     @include huge_screen {
-      padding: 14rem 0 10rem;
+      margin: 14rem 0 10rem;
     }
 
     .category {
@@ -182,32 +181,84 @@
   .feature_products {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
-
-    .product {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-radius: 0.5rem;
-      overflow: hidden;
-    }
+    gap: 2rem;
+    margin: 5rem 0;
 
     .product1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.5rem;
       background-color: $primary_orange;
-      height: 45rem;
+      height: 40rem;
+
+      @include tablet {
+        height: 45rem;
+      }
+
+      @include laptop {
+        height: 35rem;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      @include laptop {
+        height: 40rem;
+      }
 
       img {
-        width: 60%;
-        position: relative;
-        top: 22%;
+        width: 80%;
+
+        @include tablet {
+          width: 20rem;
+        }
+
+        @include laptop {
+          width: 25rem;
+        }
+
+        @include desktop {
+          width: 30rem;
+          margin-left: 5%;
+        }
+
+        @include huge_screen {
+          width: 35rem;
+          margin-left: 10%;
+        }
       }
 
       .product1_desc {
-        width: 20%;
-        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        padding: 2rem;
+        color: $primary_text_white;
+
+        @include tablet {
+          width: 25rem;
+        }
+
+        @include laptop {
+          text-align: start;
+          align-items: flex-start;
+        }
+
+        @include desktop {
+          gap: 1.5rem;
+          margin-right: 10%;
+        }
+
+        @include huge_screen {
+          margin-right: 15%;
+        }
 
         .desc_title {
           text-transform: uppercase;
+          font-size: calc(0.9 * $font-size-2xl);
         }
 
         .desc_action {
@@ -218,15 +269,38 @@
     }
 
     .product2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 0.5rem;
       background-color: $secondary_bg_white;
-      height: 25rem;
+      overflow: hidden;
+      height: 20rem;
+
+      @include tablet {
+        height: 25rem;
+      }
+
+      @include laptop {
+        height: 30rem;
+      }
 
       .product2_desc {
-        width: 40%;
-        margin-left: auto;
+        min-width: 15rem;
+        margin-left: 10%;
+
+        @include laptop {
+          margin-left: 10%;
+        }
+
+        @include desktop {
+          margin-left: 15%;
+        }
 
         .desc_title {
           text-transform: uppercase;
+          font-size: calc(0.8 * $font-size-xl);
+          padding-bottom: 2rem;
         }
 
         .desc_action {
@@ -237,38 +311,78 @@
       }
 
       img {
-        width: 50%;
+        width: 12rem;
+
+        @include tablet {
+          width: min(50vw, 20rem);
+          position: initial;
+        }
+
+        @include laptop {
+          margin-right: 10%;
+        }
+
+        @include desktop {
+          width: 25rem;
+        }
       }
     }
 
     .product3 {
-      gap: 5rem;
-      height: 20rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      height: 25rem;
+
+      @include tablet {
+        height: 30rem;
+        flex-direction: row;
+      }
+
+      @include laptop {
+        height: 35rem;
+      }
+
+      @include desktop {
+        height: 40rem;
+      }
+
+      @include huge_screen {
+        height: 45rem;
+      }
 
       .product3_image {
-        flex: 1;
-        height: inherit;
+        height: 50%;
+
+        @include tablet {
+          flex: 1;
+        }
 
         img {
           width: 100%;
+          height: 100%;
           border-radius: 0.5rem;
-          height: inherit;
           object-fit: cover;
         }
       }
 
       .product3_desc {
-        flex: 1;
-        height: inherit;
+        height: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 2rem;
         background-color: $secondary_bg_white;
         border-radius: 0.5rem;
 
+        @include tablet {
+          flex: 1;
+        }
+
         .desc_title {
           text-transform: uppercase;
+          font-size: calc(0.8 * $font-size-xl);
         }
 
         .desc_action {

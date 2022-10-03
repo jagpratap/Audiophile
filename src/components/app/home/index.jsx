@@ -74,7 +74,7 @@ const Home = () => (
             </div>
           </div>
         </div>
-        <div className="section_article">
+        {/* <div className="section_article">
           <div className="article_content">
             <h4 className="article_heading">
               Bringing you the
@@ -95,7 +95,7 @@ const Home = () => (
           <div className="article_image">
             <img src="./assets/images/modal_image.jpg" alt="Article_modal" />
           </div>
-        </div>
+        </div> */}
       </div>
     </main>
   </>
