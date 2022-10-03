@@ -1,17 +1,25 @@
 .footer {
   background-color: $primary_bg_black;
   color: $primary_text_white;
-  padding: 5rem 0;
+  padding: 3.75rem 0;
 
-  .navbar {
+  .footer_navbar {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding-bottom: 2rem;
+
+    .navbar_brand {
+      font-family: $montserrat-font-weight-800;
+      font-size: calc(1.2 * $font-size-lg);
+      letter-spacing: 0.1rem;
+    }
 
     .navbar_nav {
       display: flex;
-      gap: 2rem;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin: 2.5rem 0;
 
       a {
         text-transform: uppercase;
@@ -22,18 +30,18 @@
 
   .footer_content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+    gap: 2rem;
 
-    .content_left {
-      width: 40%;
-
-      .content_desc {
-        margin-bottom: 2rem;
-      }
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
     }
 
-    .content_right {
+    .social_nav {
       display: flex;
       gap: 2rem;
 

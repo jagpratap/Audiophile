@@ -22,7 +22,7 @@ const Home = () => (
       <div className="container">
         <div className="section_content">
           <p className="content_subheading">New Product</p>
-          <h3 className="content_heading">XX99 Mark II Headphone</h3>
+          <h4 className="content_heading">XX99 Mark II Headphone</h4>
           <p className="content_desc">
             Experience natural, lifelike audio and exceptional build quality
             made for the passionate music enthusiast.
@@ -49,7 +49,7 @@ const Home = () => (
           <div className="product product1">
             <img src="./assets/images/products/speakers/speakerZX9.png" alt="SpeakerZX9" />
             <div className="product1_desc">
-              <h3 className="desc_title">ZX9 Speaker</h3>
+              <h4 className="desc_title">ZX9 Speaker</h4>
               <p className="desc_tagline">
                 Upgrade to premium speakers that are phenomenally built to deliver
                 truly remarkable sound.
@@ -74,7 +74,10 @@ const Home = () => (
             </div>
           </div>
         </div>
-        {/* <div className="section_article">
+        <div className="section_article">
+          <div className="article_image">
+            <img src="./assets/images/modal_image.jpg" alt="Article_modal" />
+          </div>
           <div className="article_content">
             <h4 className="article_heading">
               Bringing you the
@@ -92,10 +95,7 @@ const Home = () => (
               your portable audio equipment.
             </p>
           </div>
-          <div className="article_image">
-            <img src="./assets/images/modal_image.jpg" alt="Article_modal" />
-          </div>
-        </div> */}
+        </div>
       </div>
     </main>
   </>

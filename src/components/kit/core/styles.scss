@@ -106,16 +106,8 @@ body {
 }
 
 .container {
-  width: 90vw;
+  width: 85vw;
   margin: 0 auto;
-
-  @include laptop {
-    width: 85vw;
-  }
-
-  @include desktop {
-    width: 80vw;
-  }
 }
 
 button {

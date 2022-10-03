@@ -47,6 +47,9 @@
       }
 
       .navbar_brand {
+        font-family: $montserrat-font-weight-800;
+        font-size: calc(1.2 * $font-size-lg);
+        letter-spacing: 0.1rem;
 
         @include tablet {
           margin-right: auto;
