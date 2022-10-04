@@ -96,7 +96,7 @@
 
       .navbar_nav {
         display: flex;
-        gap: 1.5rem;
+        gap: 1rem;
 
         @include desktop {
           gap: 2rem;
@@ -105,6 +105,7 @@
         a {
           text-transform: uppercase;
           letter-spacing: 0.1rem;
+          font-family: $montserrat-font-weight-500;
         }
       }
 

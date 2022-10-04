@@ -12,12 +12,7 @@
   }
 
   @include laptop {
-    min-height: 90vh;
-    background-position: right;
     background-size: contain;
-  }
-
-  @include huge_screen {
     background-position: 90%;
   }
 
@@ -38,13 +33,6 @@
       align-items: flex-start;
       text-align: start;
       gap: 1.5rem;
-      width: 25rem;
-    }
-
-    @include desktop {
-      align-items: flex-start;
-      text-align: start;
-      gap: 2rem;
       width: 25rem;
     }
 
@@ -98,6 +86,11 @@
       margin: 9.5rem 0 6.25rem;
     }
 
+    @include laptop {
+      gap: 1.5rem;
+      margin: 12.5rem 0 8rem;
+    }
+
     .category {
       display: flex;
       flex-direction: column;
@@ -112,31 +105,15 @@
         flex: 1;
       }
 
-      @include desktop {
-        height: 15rem;
-      }
-
-      @include huge_screen {
-        height: 16rem;
+      @include laptop {
+        height: 12.5rem;
       }
 
       img {
         width: 10rem;
-        position: relative;
-        top: -10%;
-
-        @include tablet {
-          top: -12%;
-        }
 
         @include desktop {
-          width: 11rem;
-          top: -14%;
-        }
-
-        @include huge_screen {
           width: 12rem;
-          top: -16%;
         }
       }
 
@@ -156,10 +133,6 @@
           font-size: calc(0.9 * $font-size-base);
         }
 
-        @include desktop {
-          font-size: $font-size-base;
-        }
-
         img {
           width: 1rem;
           margin-top: 0.2rem;
@@ -172,7 +145,6 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin: 8.75rem 0;
 
     .product1 {
       display: flex;
@@ -193,10 +165,6 @@
         justify-content: space-between;
       }
 
-      @include laptop {
-        height: 40rem;
-      }
-
       img {
         width: 80%;
 
@@ -205,17 +173,12 @@
         }
 
         @include laptop {
-          width: 25rem;
+          width: min(35vw, 25rem);
+          margin-left: auto;
         }
 
         @include desktop {
-          width: 30rem;
-          margin-left: 5%;
-        }
-
-        @include huge_screen {
-          width: 35rem;
-          margin-left: 10%;
+          width: min(40vw, 30rem);
         }
       }
 
@@ -236,15 +199,7 @@
         @include laptop {
           text-align: start;
           align-items: flex-start;
-        }
-
-        @include desktop {
-          gap: 1.5rem;
-          margin-right: 10%;
-        }
-
-        @include huge_screen {
-          margin-right: 15%;
+          margin-right: auto;
         }
 
         .desc_title {
@@ -276,12 +231,16 @@
         height: 18rem;
       }
 
+      @include laptop {
+        height: 20rem;
+      }
+
       .product2_desc {
         min-width: 15rem;
-        padding-left: 5%;
+        padding-left: 5vw;
 
         @include tablet {
-          padding-left: 10%;
+          padding-left: 10vw;
         }
 
         .desc_title {
@@ -312,7 +271,7 @@
         }
 
         @include desktop {
-          width: 25rem;
+          width: min(30vw, 25rem);
         }
       }
     }
@@ -353,11 +312,16 @@
         gap: 2rem;
         background-color: $secondary_bg_white;
         border-radius: 0.5rem;
-        padding-left: 10%;
+        padding-left: 10vw;
 
         @include tablet {
           width: 50%;
           height: 100%;
+          padding-left: 5vw;
+        }
+
+        @include laptop {
+          padding-left: 10vw;
         }
 
         .desc_title {
@@ -377,9 +341,15 @@
   .section_article {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    margin: 8rem 0 6rem;
+    margin: 8rem 0;
+
+    @include laptop {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      margin: min(16.5vw, 12.5rem) 0;
+      gap: 10vw;
+    }
 
     .article_image {
       height: 21.25rem;
@@ -390,6 +360,12 @@
       @include tablet {
         height: 18.75rem;
         margin-bottom: 2rem;
+      }
+
+      @include laptop {
+        flex: 1;
+        height: 36rem;
+        margin-bottom: unset;
       }
 
       img {
@@ -409,6 +385,12 @@
       text-align: center;
       gap: 2rem;
       margin-top: 2.5rem;
+
+      @include laptop {
+        margin-top: unset;
+        flex: 1;
+        text-align: start;
+      }
 
       .article_heading {
         text-transform: uppercase;

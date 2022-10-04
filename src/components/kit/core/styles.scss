@@ -108,6 +108,10 @@ body {
 .container {
   width: 85vw;
   margin: 0 auto;
+
+  @include laptop {
+    width: 80vw;
+  }
 }
 
 button {
